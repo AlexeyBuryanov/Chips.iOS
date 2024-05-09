@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0-ios</TargetFramework>
+        <ImplicitUsings>true</ImplicitUsings>
+        <IsBindingProject>true</IsBindingProject>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyName>Chips.iOS</AssemblyName>
+        <RootNamespace>Chips.iOS</RootNamespace>
+        <PackageId>Chips.iOS</PackageId>
+        <PackageProjectUrl>https://github.com/AlexeyBuryanov/Chips.iOS</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/AlexeyBuryanov/Chips.iOS</RepositoryUrl>
+        <Description>Port for .NET 7.</Description>
+        <Version>1.0.0</Version>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Oleksii Burianov</Authors>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageTags>net7-ios;ios;chips;nachos</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENSE">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+        <ObjcBindingCoreSource Include="Structs.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <NativeReference Include="libCLTokenField.a">
+        <Kind>Static</Kind>
+        <SmartLink>True</SmartLink>
+        <ForceLoad>True</ForceLoad>
+      </NativeReference>
+    </ItemGroup>
+</Project>
