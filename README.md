@@ -1,3 +1,3 @@
 # Chips.iOS
 
-[![Static Badge](https://img.shields.io/badge/NuGet-Chips.iOS-blue)](https://www.nuget.org/packages/Chips.iOS/)
+[![Static Badge](https://img.shields.io/badge/NuGet-v1.0.0-blue)](https://www.nuget.org/packages/Chips.iOS/)
